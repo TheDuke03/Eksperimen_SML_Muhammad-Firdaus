@@ -25,8 +25,13 @@ jobs:
         run: |
           python preprocessing/automate_Muhammad-Firdaus.py
 
+      - name: Debug - Lihat isi direktori hasil
+        run: |
+          echo "Isi direktori preprocessing:"
+          ls -R preprocessing/namadataset_preprocessing
+
       - name: Upload hasil preprocessing
         uses: actions/upload-artifact@v4
         with:
           name: wine_preprocessed
-          path: namadataset_preprocessing/wine_preprocessed.csv
+          path: preprocessing/namadataset_preprocessing/wine_preprocessed.csv
