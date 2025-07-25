@@ -37,6 +37,6 @@ def preprocess_wine_data(input_csv: str, output_csv: str) -> None:
 
 if __name__ == "__main__":
     preprocess_wine_data(
-        input_csv="../namadataset_raw/winequality-red.csv",
+        input_csv="namadataset_raw/winequality-red.csv",
         output_csv="namadataset_preprocessing/wine_preprocessed.csv"
     )
