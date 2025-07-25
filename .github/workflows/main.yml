@@ -2,9 +2,6 @@ name: Preprocessing Automation
 
 on:
   push:
-    paths:
-      - 'preprocessing/**'
-      - '.github/workflows/preprocessing.yml'
   workflow_dispatch:
 
 jobs:
