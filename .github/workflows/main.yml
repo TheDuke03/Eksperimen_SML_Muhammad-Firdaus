@@ -24,3 +24,9 @@ jobs:
       - name: Run preprocessing script
         run: |
           python preprocessing/automate_Muhammad-Firdaus.py
+
+      - name: Upload hasil preprocessing
+        uses: actions/upload-artifact@v4
+        with:
+          name: wine_preprocessed
+          path: namadataset_preprocessing/wine_preprocessed.csv
